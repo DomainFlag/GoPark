@@ -1,0 +1,21 @@
+eqfeed_callback({
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "icon": "/static/images/icons/map-marker-do.png",
+        "coordinates": [
+          -0.53743,
+          53.23437
+        ]
+      },
+      "properties": {
+        "name": "Cathedral",
+        "description": "One of Europeâ€™s finest Gothic buildings, once the tallest building in the world that dominates Lincoln's skyline.",
+        "icon": "/static/images/icons/map-marker-do.png"
+      }
+    }
+  ]
+});

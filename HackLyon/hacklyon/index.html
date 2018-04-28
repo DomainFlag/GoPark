@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css"/>-->
+    <!-- <link rel="icon" href="img/logo_favicon.png"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+    <title>GoPark</title>
+</head>
+<body>
+<!--<div class="main">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="row">-->
+
+            <!--<div class="col-md-7 intro-bg padding-v-200 padding-h-80 font-white" style="border-radius: 10px;">-->
+                <!--<h1 class="padding-bottom-10 d-inline-block font-weight-bold">The Easiest Way to Park!</h2>-->
+                    <!--<h5 class="padding-bottom-20 font-slight-white">Park you vehicle today with zero efforts.</h5>-->
+                    <!--<form class="form">-->
+                        <!--<div class="form-row">-->
+                            <!--<div class="form-group col-9">-->
+                                <!--<input type="text" class="form-control form-control-lg" id="searchMain" placeholder="Search by parking name .i.e Part-dieu" style="width: 100%; margin-right: 15px; padding: 15px 35px 15px 20px;">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<button type="submit" class="btn btn-primary btn-lg" style="padding: 15px 35px; background: #037ef3; border: none;">Find Parking</button>-->
+                    <!--</form>-->
+            <!--</div>-->
+
+            <!--<div class="col-sm-12 col-md-5 padding-top-100">-->
+                <!--<div class="container">-->
+                    <!--<div class="row">-->
+
+                        <!--<div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable margin-v-50">-->
+                            <!--<div class="media ic">-->
+                                <!--<div class="media-left text-center padding-right-20 padding-top-10">-->
+                                    <!--<img src="img/icons/1.png" class="icon-feature">-->
+                                <!--</div>-->
+                                <!--<div class="media-body">-->
+                                    <!--<h4 class="">-->
+                                        <!--<span class=""><strong>Interactive Parking Map</strong></span>-->
+                                    <!--</h4>-->
+                                    <!--<p class="pix-black-gray-light margin-bottom-30">-->
+                                        <!--<span class="text_gray">We can put some dummy text here to present a feature in the main homepage.</span>-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable margin-v-50">-->
+                            <!--<div class="media ic">-->
+                                <!--<div class="media-left text-center padding-right-20 padding-top-10">-->
+                                    <!--<img src="img/icons/2.png" class="icon-feature">-->
+                                <!--</div>-->
+                                <!--<div class="media-body">-->
+                                    <!--<h4 class="">-->
+                                        <!--<span class=""><strong>Electric Chargers</strong></span>-->
+                                    <!--</h4>-->
+                                    <!--<p class="pix-black-gray-light margin-bottom-30">-->
+                                        <!--<span class="text_gray">We can put some dummy text here to present a feature in the main homepage.</span>-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="col-md-12 col-xs-12 col-sm-12 column ui-droppable margin-v-50">-->
+                            <!--<div class="media ic margin-v-30">-->
+                                <!--<div class="media-left text-center padding-right-20 padding-top-10">-->
+                                    <!--<img src="img/icons/3.png" class="icon-feature">-->
+                                <!--</div>-->
+                                <!--<div class="media-body">-->
+                                    <!--<h4 class="">-->
+                                        <!--<span class=""><strong>Online Reservation</strong></span>-->
+                                    <!--</h4>-->
+                                    <!--<p class="pix-black-gray-light margin-bottom-30">-->
+                                        <!--<span class="text_gray">We can put some dummy text here to present a feature in the main homepage.</span>-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--&lt;!&ndash;FOOTER SECTION HERE&ndash;&gt;-->
+
+    <!--<footer>-->
+        <!--<div class="container-fluid">-->
+        <!--</div>-->
+    <!--</footer>-->
+<!--</div>-->
+<div id="map"></div>
+<form class="search">
+    <input class="search_input" type="text" placeholder="Search"/>
+
+    <div class="menu">
+        <img src="./img/search.svg"/>
+        <img class="settings" src="./img/menu.svg"/>
+    </div>
+
+    <div class="suggestions"></div>
+</form>
+<div id="settings">
+    <div class="settings_header">
+        <h1 class="settings_header_text">DouaPark</h1>
+        <img class="settings_header_img" src="./img/back.svg">
+    </div>
+    <div class="settings_details">
+        <ul class="settings_details_list">
+            <li>
+                <img src="./img/database.svg">
+                Data
+            </li>
+            <li>
+                <img src="./img/languages.svg">
+                Languages
+            </li>
+            <li>
+                <img src="./img/preferences.svg">
+                Preferences
+            </li>
+            <li>
+                <img src="./img/about.svg">
+                About
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="settings_disclaimer">
+        <h1 class="settings_disclaimer_text">@All rights reserved p1608951 | p1612186</h1>
+    </div>
+</div>
+
+<!--
+<div class="modal_popup">
+    <img class="delete_icon" src="./img/image_close.png">
+    <div class="modal_container">
+        <img class="modal_image" src="./img/park.jpg" alt="park">
+    </div>
+</div>
+-->
+
+<div id="popup">
+    <div class="popup_content">
+        <img class="park_close" src="./img/close.svg">
+        <div class="park_header">
+            <h1 id = "park_id" class="park_name">
+            </h1>
+            <div class="park_legend">
+                <div class="park_legend_col">
+                    <span class="opened_park"></span>
+                    <h1 class="park_legend_text">Opened</h1>
+                </div>
+                <div class="park_legend_col">
+                    <span class="closed_park"></span>
+                    <h1 class="park_legend_text">Closed</h1>
+                </div>
+            </div>
+        </div>
+        <div class="park">
+            <div class="park_controller">
+                <div class="entrance"></div>
+                <div class="exit"></div>
+            </div>
+            <div class="places">
+                <div class="park_row">
+                    <div id="1" class="park_place opened_park"></div>
+                    <div id="2" class="park_place opened_park"></div>
+                    <div id="3" class="park_place closed_park"></div>
+                    <div id="4" class="park_place opened_park"></div>
+                    <div id="5" class="park_place opened_park"></div>
+                    <div id="6" class="park_place opened_park"></div>
+                </div>
+                <div class="park_row">
+                    <div id="7" class="park_place opened_park"></div>
+                    <div id="8" class="park_place closed_park"></div>
+                    <div id="9" class="park_place closed_park"></div>
+                    <div id="10" class="park_place opened_park"></div>
+                    <div id="11" class="park_place opened_park"></div>
+                    <div id="12" class="park_place closed_park"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_fma7GNMGe-qV8OoU3bQCoUIZcKl7KjU&callback=initMap">
+</script>
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+
+
+<script src="js/first_script.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

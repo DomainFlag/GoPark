@@ -1,0 +1,16 @@
+#map {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.file_upload {
+    display: block;
+    z-index: 20;
+}

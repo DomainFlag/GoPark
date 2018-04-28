@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.modal_popup {
+    width: 550px;
+    height: 300px;
+    display: flex;
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+}
+
+@keyframes modal_up {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes modal_down {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.modal_up {
+    opacity: 0;
+    animation: modal_up 1s forwards;
+}
+
+.modal_down {
+    opacity: 1;
+    animation: modal_down 1s forwards;
+}
+
+.modal_container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal_image {
+    width: 100%;
+    height: 100%;
+}
+
+.delete_icon {
+    height: 50px;
+    width: 50px;
+    left: 100%;
+    transform: translate(-125%, 25%);
+    position: absolute;
+    z-index: 2;
+}
+
+/* Search Bar */
+
+.search {
+    margin: 0 40px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    right: 10px;
+    top: 10px;
+}
+
+.search > input {
+    background-color: white;
+    border-radius: 4px;
+    padding-left: 8px;
+    border: none;
+    height: 40px;
+    width: 320px;
+    color: darkslategray;
+}
+
+.search > input::placeholder {
+    color: lightgray;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    left: 100%;
+    transform: translate(-100%, 0);
+}
+
+.menu > img {
+    border-radius: 0 4px 4px 0;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.menu > img:last-of-type {
+    background-color: #F85A40;
+}
+
+.menu > img:last-of-type:hover {
+    background-color: #ff6e4a;
+}
+
+.suggestions {
+    top: 40px;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: auto;
+}
+
+.suggestion {
+    display: block;
+    padding: 8px;
+    color: #8B8B8B;
+}
+
+.suggestion:hover {
+    background-color: #F0F0F0;
+}
+
+#settings {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #2E9699;
+    flex: 1;
+    position: absolute;
+    left: 100%;
+    width: 25%;
+    height: 100%;
+}
+
+
+.slide_left_in {
+    animation: slide_left_out 0.3s forwards ease-out;
+}
+
+.slide_left_out {
+    animation: slide_left_in 0.3s forwards ease-in;
+}
+
+@keyframes slide_left_out {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@keyframes slide_left_in {
+    0% {
+        transform: translate(-100%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.settings_header {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings_header_text {
+    font-size: 28px;
+    color: whitesmoke;
+}
+
+.settings_header > img {
+    width: 28px;
+    height: auto;
+}
+
+.settings_header > img:hover {
+    width: 32px;
+}
+
+.settings_details {
+    display: flex;
+    flex: 9;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.settings_details_list {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style-type: none;
+    width: 100%;
+}
+
+.settings_details_list > li {
+    margin: 12px 0;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.settings_details_list > li:hover {
+    margin: 12px 0;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.settings_details_list > li:hover > img {
+    width: 24px;
+    height: auto;
+}
+
+.settings_details_list > li > img {
+    margin-right: 8px;
+    width: 20px;
+    height: auto;
+}
+
+.settings_disclaimer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.settings_disclaimer_text {
+    font-size: 10px;
+    color: white;
+}
+
+#popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0;
+}
+
+.popup_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.popup_appear_in {
+    animation: popup_in 0.4s forwards;
+}
+
+.popup_appear_out {
+    animation: popup_out 0.4s forwards;
+}
+
+@keyframes popup_in {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+        z-index: 3;
+    }
+}
+
+@keyframes popup_out {
+    0% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.0;
+        z-index: -1;
+    }
+}
+
+.popup_content > img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    transform: translate(-200%, 100%);
+}
+
+.popup_content > img:hover {
+    transform: translate(-200%, 100%) scale(1.2);
+}
+
+.park_header {
+    margin: 16px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.park_name {
+    font-size: 28px;
+    color: black;
+}
+
+.park_legend {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.park_legend_col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.park_legend_col > span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.park_legend_text {
+    margin: 0 8px;
+    font-size: 16px;
+    color: black;
+}
+
+.park {
+    margin: 16px;
+    position: relative;
+    display: flex;
+    width: 60%;
+    height: 65%;
+    border-radius: 4px;
+    border: 1.5px gray solid;
+}
+
+.park_controller {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(-50%, 0);
+}
+
+.entrance {
+    height: 30%;
+    width: 20px;
+    border: 2px #F85A40 solid;
+    border-radius: 8px;
+    background-color: #F67280;
+}
+
+.exit {
+    height: 30%;
+    width: 20px;
+    border: 2px seagreen solid;
+    border-radius: 8px;
+    background-color: #A2D4AB;
+}
+
+.places {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.park_row {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.park_place {
+    height: 100%;
+    width: 100px;
+    border: 1px solid whitesmoke;
+}
+
+.closed_park {
+    background-color: #F67280;
+}
+
+.closed_park:hover {
+    background-color: #F85A40;
+}
+
+.opened_park {
+    background-color: #A2D4AB;
+}
+
+.opened_park:hover {
+    background-color: seagreen;
+}
+
+.decalate_search
+{
+    position: relative;
+}

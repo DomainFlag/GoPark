@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+
+<!-- google font -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+
+<style>
+	/* body {
+    	font-family: 'Roboto', sans-serif;
+	} */
+
+	a { text-decoration: none; }
+	a:hover { opacity: 0.7; }
+
+</style>
+
+</head>
+<body>
+
+
+	<div class="text-center" style="margin-top: 100px; padding: 100px; border: 1px; border: 3px solid #eee; width: 45%; border-radius: 5px; margin-left: auto; margin-right: auto; display: block;">
+		<!-- <a href="#" class="logo"><img src="img/logo.svg"></a> -->
+
+		<?xml version="1.0"?>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="150 150 200 200" style="enable-background:new 0 0 100 100;" xml:space="preserve" width="120px" height="120"><g transform="matrix(0.305459 0 0 0.305459 177.802 177.802)"><path style="fill:#87D2F3;" d="M448,96h-64c-11.767-0.035-21.298-9.566-21.333-21.333v-64L448,96z" data-original="#87D2F3"/><g>
+			<path style="fill:#FFFFFF;" d="M448,96v384c-0.035,11.768-9.566,21.298-21.333,21.333H85.333C73.566,501.298,64.035,491.768,64,480   V32c0.035-11.767,9.566-21.298,21.333-21.333h277.333v64C362.702,86.434,372.233,95.965,384,96H448z" data-original="#FFFFFF"/>
+			<path style="fill:#FFFFFF;" d="M352,224v21.333H234.667v-32H352V224z" data-original="#FFFFFF"/>
+		</g><path style="fill:#87D2F3;" d="M384,256v170.667c0,5.891-4.776,10.667-10.667,10.667H138.667c-5.891,0-10.667-4.776-10.667-10.667  v-224c0-5.891,4.776-10.667,10.667-10.667H224c5.891,0,10.667,4.776,10.667,10.667v42.667h138.667  C379.224,245.333,384,250.109,384,256z" data-original="#87D2F3"/><g>
+			<path style="fill:#2170A6" d="M117.333,64H224v21.333H117.333V64z" data-original="#2170A6" class="active-path"/>
+			<path style="fill:#2170A6" d="M117.333,106.667h21.333V128h-21.333V106.667z" data-original="#2170A6" class="active-path"/>
+			<path style="fill:#2170A6" d="M160,106.667h21.333V128H160V106.667z" data-original="#2170A6" class="active-path"/>
+			<path style="fill:#2170A6" d="M455.541,88.459L370.208,3.125c-2-2.001-4.713-3.125-7.541-3.125H85.333c-17.673,0-32,14.327-32,32   l0,0v448c0,17.673,14.327,32,32,32h341.333c17.673,0,32-14.327,32-32V96C458.666,93.171,457.542,90.459,455.541,88.459z    M437.333,480c0,5.891-4.776,10.667-10.667,10.667H85.333c-5.891,0-10.667-4.776-10.667-10.667V32   c0-5.891,4.776-10.667,10.667-10.667H352v53.333c0,17.673,14.327,32,32,32h21.333V85.333H384c-5.891,0-10.667-4.776-10.667-10.667   V36.416l64,64V480z" data-original="#2170A6" class="active-path"/>
+			<path style="fill:#2170A6" d="M373.333,234.667h-128V224h117.333v-10.667c0-5.891-4.776-10.667-10.667-10.667H245.333   c0-11.782-9.551-21.333-21.333-21.333h-85.333c-11.782,0-21.333,9.551-21.333,21.333v224c0,11.782,9.551,21.333,21.333,21.333   h74.667v-21.333h-74.667v-224H224v32h-32V256h181.333v170.667h-74.667V448h74.667c11.782,0,21.333-9.551,21.333-21.333V256   C394.667,244.218,385.115,234.667,373.333,234.667z" data-original="#2170A6" class="active-path"/>
+			<path style="fill:#2170A6" d="M306.208,344.459l-42.667-42.667c-4.165-4.164-10.917-4.164-15.083,0l-42.667,42.667l15.083,15.083   l24.459-24.459V448h21.333V335.083l24.459,24.459L306.208,344.459z" data-original="#2170A6" class="active-path"/>
+		</g></g> </svg>
+
+		<h1 style="color: #444; font-weight: 400; ">Upload Image</h1>
+		<h3 style="color: #888; font-weight: 400; padding-bottom: 20px; ">Choose image or drag & drop it.</h1>
+
+		<form class="file_upload" action="http://localhost:8000/post-image" enctype="multipart/form-data" method="POST">
+	 		<select name="parking_list">
+				<option value="0">Select option </option>
+				<option value="1">option 1</option>
+				<option value="2">option 2</option>
+			</select>
+	   	<input class="custom-file-input" type="file" size="60" name="photo" /><br>
+	   	<input class="submit_button button-upload" style="margin-top: 20px;" type="submit" value="Upload Photo"/>
+		</form>
+
+
+		<!-- <div>
+	  	<a href="" style="padding: 15px 30px; background-color: #0099e5; color: #fff; border-radius: 3px; margin-top: 500px; ">Return to home</a>
+		</div> -->
+
+	</div>
+
+</body>
+</html>

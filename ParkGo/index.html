@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Go Park</title>
+    <link href="./public/styles/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="map"></div>
+<form class="file_upload" action="http://localhost:8000/post-image" enctype="multipart/form-data" method="POST">
+    <select class="parking_select" name="parking_list"></select>
+    <input type="file" name="photo" />
+    <input class="submit_button" type="submit" value="Upload Photo"/>
+</form>
+<script src="./public/script/script.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaOUqLF5_c7oKji3LpOLgTmfIplGbWoEQ&callback=initMap">
+</script>
+</body>
+</html>

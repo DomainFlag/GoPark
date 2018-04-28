@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+<path fill="#F15A29" d="M59.893,48c0,6.628-5.373,12-12,12h-36c-6.628,0-12-5.372-12-12V12c0-6.627,5.372-12,12-12h36
+	c6.627,0,12,5.373,12,12V48z"/>
+<g id="s" display="none">
+	<path display="inline" fill="#D32A27" d="M19.184,18.977c7.216,0,11.467,4.298,11.467,11.934c0,7.632-4.251,12.113-11.467,12.113
+		H10V18.977H19.184z M15.032,38.859h3.553c4.499,0,6.933-2.734,6.933-7.934c0-5.032-2.5-7.799-6.933-7.799h-3.553V38.859z"/>
+	<path display="inline" fill="#D32A27" d="M43.668,18.977C48.6,18.977,52,22.26,52,27.209c0,4.934-3.517,8.231-8.581,8.231h-4.501
+		v7.583h-5.035V18.977H43.668z M38.918,31.51h3.4c2.881,0,4.564-1.534,4.564-4.284c0-2.732-1.663-4.267-4.551-4.267h-3.414V31.51z"
+		/>
+</g>
+<g id="w" display="none">
+	<path display="inline" fill="#F1F2F2" d="M18.184,17.977c7.216,0,11.467,4.298,11.467,11.934c0,7.632-4.251,12.113-11.467,12.113H9
+		V17.977H18.184z M14.032,37.859h3.553c4.499,0,6.933-2.734,6.933-7.934c0-5.032-2.5-7.799-6.933-7.799h-3.553V37.859z"/>
+	<path display="inline" fill="#F1F2F2" d="M42.668,17.977C47.6,17.977,51,21.26,51,26.209c0,4.934-3.517,8.231-8.581,8.231h-4.501
+		v7.583h-5.035V17.977H42.668z M37.918,30.51h3.4c2.881,0,4.564-1.534,4.564-4.284c0-2.732-1.663-4.267-4.551-4.267h-3.414V30.51z"
+		/>
+</g>
+<g id="base" display="none">
+	<text transform="matrix(1 0 0 1 4.8564 42.0244)" display="inline" fill="#FFFFFF" font-family="'Gotham-Bold'" font-size="34">G</text>
+	<text transform="matrix(1 0 0 1 30 42.0225)" display="inline" fill="#FFFFFF" font-family="'Gotham-Bold'" font-size="34">P</text>
+</g>
+<g>
+	<g id="shadow">
+		<text transform="matrix(1 0 0 1 5.9639 43.0244)" fill="#CE2D2E" font-family="'Gotham-Bold'" font-size="34">G</text>
+		<text transform="matrix(1 0 0 1 31.1074 43.0225)" fill="#CE2D2E" font-family="'Gotham-Bold'" font-size="34">P</text>
+	</g>
+	<g id="white">
+		<g>
+			<g>
+				<path fill="#FFFFFF" d="M6.766,30.193v-0.068c0-6.765,5.27-12.307,12.478-12.307c4.283,0,6.867,1.156,9.349,3.264l-3.298,3.978
+					c-1.835-1.53-3.468-2.414-6.221-2.414c-3.808,0-6.834,3.366-6.834,7.411v0.068c0,4.351,2.992,7.547,7.208,7.547
+					c1.903,0,3.604-0.476,4.929-1.428v-3.399h-5.269v-4.522h10.334v10.334c-2.447,2.074-5.812,3.774-10.164,3.774
+					C11.865,42.433,6.766,37.23,6.766,30.193z"/>
+			</g>
+		</g>
+		<g>
+			<path fill="#FFFFFF" d="M32.963,18.225h9.723c5.678,0,9.111,3.366,9.111,8.228v0.068c0,5.507-4.283,8.363-9.621,8.363h-3.977
+				v7.14h-5.236V18.225z M42.346,30.226c2.619,0,4.148-1.564,4.148-3.604v-0.068c0-2.346-1.633-3.604-4.25-3.604h-4.045v7.275
+				H42.346z"/>
+		</g>
+	</g>
+</g>
+</svg>
